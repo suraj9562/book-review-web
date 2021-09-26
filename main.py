@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.secret_key = 'the-random-string'
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:@localhost/mylibrary"
 app.config.update(
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = '465',
+    MAIL_SERVER = '', #smtp.gmail.com
+    MAIL_PORT = '', #465
     MAIL_USE_SSL = True,
     MAIL_USERNAME = '',
     MAIL_PASSWORD = ''
