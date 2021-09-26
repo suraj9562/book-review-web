@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block body %}
+<style>
+    .dashtitle a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .dashtitle a button{
+        display: block;
+    }
+</style>
+
+<section id="dashintro">
+    <h1>Welcome to Dashboard</h1>
+</section>
+
+<div id="addbutton">
+    <a href="/logout" style="margin: 4px;">
+        <button type="submit">Log-Out</button>
+    </a>
+</div>
+
+<div>
+    <div class="dashtitle">
+        <h2>1. Biography Section</h2>
+        <a href="/bioedit" style="margin: 4px;">
+            <button type="submit">Biography-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>2. Art Section</h2>
+        <a href="/artedit" style="margin: 4px;">
+            <button type="submit">Art-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>3. Children Section</h2>
+        <a href="/childedit" style="margin: 4px;">
+            <button type="submit">Children-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>4. Fantacy Section</h2>
+        <a href="/fantacyedit" style="margin: 4px;">
+            <button type="submit">Fantacy-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>5. History Section</h2>
+        <a href="/historyedit" style="margin: 4px;">
+            <button type="submit">History-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>6. Medicine Section</h2>
+        <a href="/medicineedit" style="margin: 4px;">
+            <button type="submit">Medicine-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>7. Music Section</h2>
+        <a href="/musicedit" style="margin: 4px;">
+            <button type="submit">Music-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>8. Mystory Section</h2>
+        <a href="/mystoryedit" style="margin: 4px;">
+            <button type="submit">Mystory-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>9. Plays Section</h2>
+        <a href="/playsedit" style="margin: 4px;">
+            <button type="submit">Plays-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>10. Reciepies Section</h2>
+        <a href="/recipyedit" style="margin: 4px;">
+            <button type="submit">Reciepies-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>11. Religion Section</h2>
+        <a href="/religionedit" style="margin: 4px;">
+            <button type="submit">Religion-section</button>
+        </a>
+    </div>
+    <div class="dashtitle">
+        <h2>12. Romantic Books Section</h2>
+        <a href="/romanticedit" style="margin: 4px;">
+            <button type="submit">Romantic-section</button>
+        </a>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

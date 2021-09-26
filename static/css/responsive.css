@@ -1,0 +1,46 @@
+
+nav{
+    display: block;
+    /* background-color: rgb(61, 59, 59); */
+}
+
+.logo{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navicons{
+    display: block;
+    background-color: #96969600;
+}
+
+.navicons ul{
+    margin-right: 0rem;
+}
+
+.navicons ul{
+    flex-direction: column;
+}
+
+
+.ladden {
+    display: none;
+}
+
+.navicons::before{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    height: 21%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.intro::before{
+    height: 115vh;
+}
+
+.tag{
+    display: none;
+}

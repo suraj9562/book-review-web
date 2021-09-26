@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div>
+    <div class="biointro">
+        <div>
+            <h2>
+                Biography Books
+            </h2>
+        </div>
+    </div>
+
+    <div>
+        <div class="cardstart1">
+            <h2>
+                Browse By Subjects...
+            </h2>
+            <div class="cardstart">
+                {% for post in posts %}
+                    <div class="card">
+                        <img src="../static/img/{{ post.image }}" alt="Biogrphy" style="width:100%">
+                        <div class="container">
+                            <h4><b>{{ post.title }}</b></h4>
+                            <a href="/biography-books/{{ post.slug }}" class="btn1"> Read Now </a> 
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

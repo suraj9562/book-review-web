@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Library || www.Mylibrary.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/about.css">
+    <link rel="stylesheet" href="../static/css/contact.css">
+    <link rel="stylesheet" href="../static/css/book.css">
+    <link rel="stylesheet" href="../static/css/biography.css">
+    <link rel="stylesheet" href="../static/css/art.css">
+    <link rel="stylesheet" href="../static/css/child.css">
+    <link rel="stylesheet" href="../static/css/fantacy.css">
+    <link rel="stylesheet" href="../static/css/history.css">
+    <link rel="stylesheet" href="../static/css/medicine.css">
+    <link rel="stylesheet" href="../static/css/music.css">
+    <link rel="stylesheet" href="../static/css/mystory.css">
+    <link rel="stylesheet" href="../static/css/plays.css">
+    <link rel="stylesheet" href="../static/css/reciepies.css">
+    <link rel="stylesheet" href="../static/css/religion.css">
+    <link rel="stylesheet" href="../static/css/romantic.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav>
+                <div class="logo">
+                    <img src="../static/img/logo1.png" alt="logo">
+                    <h2>
+                        MY LIBRARY
+                    </h2>
+                    <div class="hidden" id="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navicons ladden" id="navicons">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/login">Log-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        {% block body %}
+        <!-- content here -->
+        {% endblock %}
+
+        <div>
+            <footer>
+                <div>
+                    <h3> &copy; Copyright All Rights Are Reserved.</h3>
+                </div>
+                <div id="footicons">
+                    <div>
+                        <a href="https://www.facebook.com/177526890164" target="_blank"><img src="../static/img/facebook.png" alt="Facebook logo"></a>
+                    </div>
+                    <div id="insta">
+                        <a href="https://www.instagram.com/narendramodi/" target="_blank"><img src="../static/img/insta.png" alt="Facebook logo"></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/narendramodi" target="_blank"><img src="../static/img/twitter.png" alt="Facebook logo"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+    <script src="../static/js/base.js"></script>
+</html>

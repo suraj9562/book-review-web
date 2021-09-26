@@ -1,0 +1,35 @@
+.romanticintro::before{
+    content: " ";
+    background-image: url('../img/romance.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.romanticintro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82vh;
+}
+
+.romanticintro h2{
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: rgb(166, 137, 191);
+}
+
+@media screen and (max-width: 500px) {
+    .romanticintro h2{
+        font-size: 3.5rem;
+    }
+}

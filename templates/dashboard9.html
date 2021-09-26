@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+<section id="dashintro">
+    <h1>Welcome to Dashboard</h1>
+</section>
+<div>
+    <h2>Add post</h2>
+    <div id="addbutton">
+        <a href="/recipyedit/0">
+            <button type="submit">Add Post</button>
+        </a>
+        <a href="/logout" style="margin: 4px;">
+            <button type="submit">Log-Out</button>
+        </a>
+    </div>
+</div>
+<div class="dashcontainer">
+    <h2>Reciepies Section</h2>
+    <ul class="responsive-table">
+        <li class="table-header">
+            <div class="col col-1">Sr. No.</div>
+            <div class="col col-2" style="text-align: center;">Title</div>
+            <div class="col col-3" style="text-align: end;">Edit</div>
+            <div class="col col-4" style="text-align: end;">Delete</div>
+        </li>
+
+        {% for post in posts %}
+
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">{{post.sno}}</div>
+            <div class="col col-2" data-label="Customer Name">{{post.title}}</div>
+            <a href="/recipyedit/{{post.sno}}"><button type="submit">
+                    <div class="col col-3" data-label="Amount">Edit</div>
+                </button></a>
+            <a href="/recipydelete/{{post.sno}}"><button type="submit">
+                    <div class="col col-4" data-label="Payment Status">Delete</div>
+                </button></a>
+        </li>
+
+        {% endfor %}
+
+    </ul>
+</div>
+
+{% endblock %}

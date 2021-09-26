@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div>
+    {% set fname = 'img/' + post.image %}
+    <div class="bookabout"style="background-image: url('{{ url_for('static',filename=fname) }}');background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;">
+        <h1>{{post.title}}</h1>
+    </div>
+    
+    <div class="bookinfo">
+        <p>{{post.content}}</p>
+    </div>
+    <hr>
+    <div id="goal">
+        <h2> Thanks For Reading!!! </h2>
+    </div>
+    <hr>
+</div>
+
+{% endblock %}

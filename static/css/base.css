@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 21%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 10rem;
+}
+
+.logo h2{
+    padding-bottom: 1rem;
+    font-weight: bolder;
+    color: #e0d4d4;
+}
+
+.logo h2:hover{
+    color: white;
+    text-shadow: 2px 2px #4b4949;
+}
+
+.hidden{
+    height: 3rem;
+    width: 3rem;
+}
+
+.navicons{
+    display: flex;
+}
+
+.navicons ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navicons ul li {
+    margin: 3px;
+    padding: 2px 3px;
+}
+
+.navicons ul li a{
+    text-decoration: none;
+    color: #e0d4d4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+footer::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    height: 23%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+footer{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 3rem;
+}
+
+footer div h3{
+    padding: 15px;
+    text-align: center;
+    color: ivory;
+}
+
+#footicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footicons img{
+    height: 80px;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+@media screen and (max-width: 375px){
+    footer::before{
+        height: 25%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    
+    .hidden{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .hidden{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+    }
+    .logo img{
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    
+    .hidden{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+    }
+}

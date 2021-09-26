@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/edit.css') }}"/>
+
+<div id="container">
+    <h1>&bull; Add/Edit Books &bull;</h1>
+    <form action="/medicineedit/{{sno}}" method="post" id="contact_form">
+      <div class="name">
+        <label for="Title"></label>
+        <input type="text" placeholder="Title" name="title" id="name_input" value="{{post.title}}" required>
+      </div>
+      <div class="email">
+        <label for="Slug"></label>
+        <input type="text" placeholder="Slug" name="slug" id="email_input" value="{{post.slug}}" required>
+      </div>
+      <div class="telephone">
+        <label for="image"></label>
+        <input type="text" placeholder="Image" name="image" id="telephone_input" value="{{post.image}}" required>
+      </div>
+      <div class="message">
+        <label for="Content"></label>
+        <textarea name="content" placeholder="Content" id="message_input" required>{{post.content}}</textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Add Changes" id="form_button" />
+      </div>
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+
+  {% endblock %}
